@@ -26,3 +26,5 @@ def dict_to_csv(data, filepath="prices.csv"):
 # Example usage:
 data = fetch(base="USD", currencies="XAU")
 dict_to_csv(data)
+
+BUMDER
