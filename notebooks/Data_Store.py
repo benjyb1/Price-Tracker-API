@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime, timezone
-from API-call import fetch
+from API_call import fetch
 import os
 
 
@@ -26,5 +26,3 @@ def dict_to_csv(data, filepath="prices.csv"):
 # Example usage:
 data = fetch(base="USD", currencies="XAU")
 dict_to_csv(data)
-
-BUMDER

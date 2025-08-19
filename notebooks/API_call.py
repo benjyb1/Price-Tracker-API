@@ -1,11 +1,5 @@
 import requests
-import kagglehub
-def get_csv_path():
-    # Download latest version
-    path = kagglehub.dataset_download("kapturovalexander/gold-and-silver-prices-2013-2023")
 
-    return ("Path to dataset files:", path)
-print(get_csv_path())
 def fetch(base="USD", currencies="XAU"):
     url = "https://api.metalpriceapi.com/v1/latest"
     params = {
@@ -27,5 +21,5 @@ def fetch(base="USD", currencies="XAU"):
         return None
 
 # Example usage:
-data = fetch(base="USD", currencies="XAU")
-print(data)
+# data = fetch(base="USD", currencies="XAU")
+# print(data)
